@@ -1,38 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .App {
   text-align: center;
+  background-color: rgb(249, 249, 249);
+  background-image: url("http://4liberty.eu/wp-content/uploads/2021/09/film-background-1334067869u9d.jpg");
+  background-size: cover;
+  font-family: 'Roboto', sans-serif !important;
+  ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  width: 90vw;
+}
+.mynav{
+  width: 90vw;
+}
+.navbar1{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  width: 40px;
+  aspect-ratio: 1;
+  margin-right: 60px;
 }
+.nav_title{
+  font-weight: 900;
+  font-family: 'Freehand', cursive;
+  font-size: 30px !important;
+  color: white!important;
+  margin-left: 20px;
+  cursor: default;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.search_add{
   display: flex;
+  gap: 10px;
+}
+.Id_input{
+width: 50px;
+}
+.btn_add_new_movie,.btn_search{
+  color: rgb(99, 99, 99) !important;
+  border: none!important;
+  background-color: white !important;
+  width: 200px !important;
+  height: 38px !important;
+  font-weight: bold !important;
+
+}
+.btn_search{
+ margin-left: 10px;
+}
+
+
+.white{
+  color: white !important;
+  font-size: 18px !important;
+}
+.white:hover{
+  text-decoration: underline;
+  scale: 1.1;
+}
+
+
+
+.rating_input{
+  width: 60px;
+}
+
+.card{
+  width: 350px !important;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.cardbody{
+  display: flex ;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.cardimg{
+  height: 350px !important;
+  border-radius: 10px;
+}
+.cardimg:hover{
+  scale: 1.1;
+  transition: 500ms ease-in-out;
+
+}
+.movie_list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+.btn_trailer{
+  border-radius: 100vw !important;
+  width: 150px;
+}
+.btn_trailer:hover{
+  scale: 1.02;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rating{
+  margin-bottom: 20px;
 }
